@@ -22,7 +22,7 @@
 
     function buildUri(city,offset,queryType) {
       var callerId = "wdc";
-      var apiKey = "jiFIGOd2aNzMwEWX1aL7kKTobgVtZiwg4UeVPVlj"
+      var apiKey = "mH8KC0ZqGdh5TiMvQsxLXg/l78JqeDMbemYi0yHazbzsV7XIiFeVUu2NW+2eq5Xbz4qdZC0B/3BmbyhDObiycSGzCZ4GVm7D4L6tFozcuM/i72oFhorHQ1KZ/21+8NqVJwVbaYejl4/LPXlAcyAtzeHVeM8k4BsLlIi42NTlkdc="
       var time = Math.floor(Date.now() / 1000);
       var unique = randomString(16, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
       var hashStr = sha1(callerId + time + apiKey + unique);
@@ -47,7 +47,6 @@
         return '';
       }
     }
-
 
     myConnector.getColumnHeaders = function() {
         var fieldNames = ['location.address.streetAddress','location.position.latitude','location.position.longitude','location.namedAreas','location.region.municipalityName','location.region.countyName','location.distance.ocean','listPrice','rent','floor','livingArea','source.name','source.id','source.type','source.url','rooms','published','constructionYear','objectType','booliId','soldDate','soldPrice','url'];
@@ -175,7 +174,7 @@
       }
     });
   });
-</script>
+  </script>
 
 </head>
 <body>
@@ -192,7 +191,6 @@
         <option value="listings">Live Properties for Sale</option>
       </select></p>
       <button type="button" id="submitButton">Fetch Data</button></p>
-      <!--input class="btn btn-dark btn-lg" type="submit" value="Get Earthquake Data"-->
     
    </form>
   </center>
